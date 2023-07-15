@@ -1,0 +1,2 @@
+<!-- What’s Box Model in CSS ?  -->
+	The box model is like creating boxes around all the HTML elements. Every block-level element we put on the screen is a box, it has some content, comes with height and width, margin and padding and a border. Properties include height, width, padding, margin and border.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <style>header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+  }
+  
+  header div {
+    height: 60px;
+  }
+  
+  .blue {
+    background-color: #588fef;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+  
+  main {
+    margin-top: 1em;
+    height: 200px;
+  }
+  
+  #cards {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+  }
+  
+  #cards div {
+    height: 200px;
+    width: 33%;
+  }
+  
+  footer {
+    margin-top: 1em;
+    height: 150px;
+  }
+  
+  @media screen and (max-width: 512px) {
+    header {
+      gap: .5em;
+    }
+  
+    header div {
+      height: 40px;
+    }
+  
+    main {
+      margin-top: .5em;
+    }
+  
+    #cards {
+      flex-direction: column;
+      gap: 0.5em;
+      margin-top: 0.5em;
+    }
+  
+    #cards div {
+      width: 100%;
+      height: 60px;
+    }
+  
+    footer {
+      margin-top: .5em;
+      height: 150px;
+    }
+  }</style>
+</head>
+
+<body>
+  <header>
+    <div class="blue"></div>
+    <div class="gray"></div>
+  </header>
+
+  <main class="gray"></main>
+
+  <div id="cards">
+    <div class="blue"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+  </div>
+
+  <footer class="gray"></footer>
+
+</body>
+
+</html>
